@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { tagType, thirdweb } from '../assets';
-import { daysLeft } from '../utils';
+import { daysLeft } from '../utils/index.js';
 
 const FundCard = ({ owner, title, description, target, deadline, amountCollected, image, handleClick }) => {
   const remainingDays = daysLeft(deadline);
